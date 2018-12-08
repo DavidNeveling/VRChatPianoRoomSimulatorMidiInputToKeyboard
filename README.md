@@ -1,5 +1,6 @@
 # VRChatPianoRoomSimulatorMidiInputToKeyboard
 ## Requirements
+If you don't already have them, install python 2 and pip, then run
 ```
 pip install pynput
 pip install python-rtmidi
@@ -7,7 +8,21 @@ pip install mido
 ```
 I only tested this on a CASIO CDP-120. So for now I'll say you need that model or a simliar model of keyboard.
 ## Instructions
-run this ***BEFORE*** you open VRChat
+Find the name of your input ports using
+```
+print mido.get_input_names()
+```
+Whichever input port looks right to you keep track of the name as *nameOfChoice*. Then replace the code segment
+```
+inputstring = open('../midi/maininput.txt').readline()
+print inputstring
+inport = mido.open_input(inputstring)
+```
+with
+```
+inport = mido.open_input(nameOfChoice)
+```
+Then run this ***BEFORE*** you open VRChat
 ```
 python main.py
 ```
