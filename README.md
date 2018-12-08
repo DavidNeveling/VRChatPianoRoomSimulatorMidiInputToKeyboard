@@ -17,6 +17,7 @@ py -2 main.py
 ```
 depending on what your system wants.
 Once you're at the piano in the simulator room, switch to the experimental layout.
+Hit the bottom note when you want to exit. (haven't tested this I just assumed it would work)
 **now play your heart out**
 ## Overview
 I tried to use 3rd party things that people were suggesting and they weren't quite doing it so I figured I'd do it myself. Initially I was having port issues and thought it would be impossible. However, I found out that VRChat actually searches for midi ports when it opens which is why I was having issues Currently right shift and numpad enter don't work so I'll fix those when it starts bothering me enough.
