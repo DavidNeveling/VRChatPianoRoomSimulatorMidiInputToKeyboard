@@ -1,20 +1,20 @@
 # VRChatPianoRoomSimulatorMidiInputToKeyboard
 ## Requirements
-'''
+```
 pip install pynput
 pip install python-rtmidi
 pip install mido
-'''
+```
 I only tested this on a CASIO CDP-120. So for now I'll say you need that model or a simliar model of keyboard.
 ## Instructions
 run this ***BEFORE*** you open VRChat
-'''
+```
 python main.py
-'''
+```
 or
-'''
+```
 py -2 main.py
-'''
+```
 depending on what your system wants.
 Once you're at the piano in the simulator room, switch to the experimental layout.
 **now play your heart out**
